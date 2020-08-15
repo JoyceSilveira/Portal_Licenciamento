@@ -95,8 +95,60 @@
 }
 
 .title-services h2{
-    color: var(--cor-principal-1);
+    color: var(--cor-principal-3);
     font-size: 1.6rem;
+}
+
+.services{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.services .cards .card-service{
+    width: 26rem;
+    height: 9rem;
+    padding: 2rem 1.5rem;
+    border: 2px solid var(--cor-principal-2);
+    text-align: center;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: #edf5fa;
+}
+
+.services .cards .card-service p{
+    font-size: 1.5rem;
+}
+
+.services .cards .card-1,
+.services .cards .card-7,
+.services .cards .card-9{
+    border-left: 10px solid var(--cor-principal-3);
+}
+
+.services .cards .card-2{
+    border-left: 10px solid var(--cor-principal-2);
+}
+
+.services .cards .card-3{
+    border-left: 10px solid var(--cor-complementar-2);
+}
+
+.services .cards .card-4,
+.services .cards .card-5{
+    border-left: 10px solid var(--cor-principal-1);
+}
+
+.services .cards .card-6{
+    border-left: 10px solid var(--cor-principal-5);
+}
+
+.services .cards .card-8{
+    border-left: 10px solid var(--cor-complementar-4);
 }
 
 @media (min-width: 700px){
@@ -157,8 +209,76 @@
         max-width: 800px;
     }
 
+    .title-services{
+        margin-bottom: 3.4rem;
+    }
+
     .title-services h2{
         font-size: 2.2rem;
+    }
+
+    .services{
+        max-width: 90%;
+        justify-content: start;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "card-1 card-2 card-3"
+        "card-4 card-5 card-6"
+        "card-7 card-8 card-9";
+        column-gap: 50px;
+        row-gap: 50px;
+    }
+
+    .services .cards .card-service{
+        width: 28.95rem;
+        height: 14rem;
+        padding: 2.8rem 2.1rem;
+        margin-top: 0rem;
+    }
+
+    .services .cards .card-service p{
+        font-size: 1.8rem;
+    }
+
+    .services .cards .card-1{
+        grid-area: card-1;
+    }
+
+    .services .cards .card-2{
+        grid-area: card-2;
+    }
+
+    .services .cards .card-3{
+        grid-area: card-3;
+    }
+
+    .services .cards .card-4{
+        grid-area: card-4;
+    }
+
+    .services .cards .card-5{
+        grid-area: card-5;
+    }
+
+    .services .cards .card-6{
+        grid-area: card-6;
+    }
+
+    .services .cards .card-7{
+        grid-area: card-7;
+    }
+
+    .services .cards .card-8{
+        grid-area: card-8;
+    }
+
+    .services .cards .card-9{
+        grid-area: card-9;
     }
 
 }
