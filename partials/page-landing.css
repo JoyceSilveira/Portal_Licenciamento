@@ -151,6 +151,42 @@
     border-left: 10px solid var(--cor-complementar-4);
 }
 
+.more-services{
+    display: block;
+    width: 90%;
+    padding: 1.3rem 0.5rem;
+    border: 2px solid var(--cor-principal-2);
+    text-align: center;
+    justify-content: center;
+    margin: 2.5rem auto;
+    border-radius: 0.8rem;
+    background-color: #edf5fa;
+}
+
+.more-services a{
+    text-decoration: none;
+}
+
+.more-services a p{
+    font-size: 1.2rem;
+    color: var(--color-text-in-base);
+}
+
+.organizations {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-text-in-base);
+    margin-top: 5rem;
+}
+
+.organizations img{
+    width: 8rem;
+}
+
+
 @media (min-width: 700px){
 
     .page-header{
@@ -281,4 +317,21 @@
         grid-area: card-9;
     }
 
+    .more-services{
+        margin: 4rem auto;
+    }
+
+    .more-services a p{
+        font-size: 1.8rem;
+    }
+
+    .organizations {
+        width: 93.5%;
+        padding-top: 3rem;
+        margin-top: 10rem;
+    }
+
+    .organizations img{
+        width: 18rem;
+    }
 }
