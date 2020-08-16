@@ -122,6 +122,7 @@
 
 .services .cards .card-service p{
     font-size: 1.5rem;
+    color: var(--cor-principal-1);
 }
 
 .services .cards .card-1,
@@ -169,13 +170,12 @@
 
 .more-services a p{
     font-size: 1.2rem;
-    color: var(--color-text-in-base);
+    color: var(--cor-principal-1);
 }
 
 .organizations {
     display: flex;
     justify-content: space-between;
-    width: 95%;
     margin: 0 auto;
     padding-top: 2rem;
     border-top: 1px solid var(--color-text-in-base);
@@ -185,6 +185,36 @@
 .organizations img{
     width: 8rem;
 }
+
+#page-landing footer{
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--color-text-in-base);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "nada logo-portal logo-prodam";
+}
+
+footer .logo-white{
+    width: 7rem;
+    grid-area: logo-portal; 
+    justify-self: center;
+}
+
+footer .prodam-white{
+    width: 5.5rem;
+    grid-area: logo-prodam;
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 1rem;
+}   
 
 
 @media (min-width: 700px){
@@ -322,16 +352,32 @@
     }
 
     .more-services a p{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .organizations {
-        width: 93.5%;
-        padding-top: 3rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
         margin-top: 10rem;
     }
 
     .organizations img{
         width: 18rem;
+    }
+
+    footer .logo-white{
+        width: 16rem;
+    }
+
+    footer .prodam-white{
+        width: 14rem;
+        margin-right: 2rem;
+    }
+
+    #page-landing footer{
+        width: 90%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
