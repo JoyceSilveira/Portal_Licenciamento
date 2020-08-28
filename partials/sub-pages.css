@@ -1,4 +1,4 @@
-#page-landing #container{
+#container{
     max-width: 100vw;
     height: 100vh;
 }
@@ -27,7 +27,7 @@
     margin: 0 auto;
 }
 
-#page-landing main{
+main{
     margin: 0.5rem auto;
     width: 100%;
 }
@@ -37,26 +37,36 @@
     margin-top: 2rem;
 }
 
+.title-page{
+    margin: 2rem auto;
+}
+
+.title-page h2{
+    color: var(--cor-principal-1);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
 .page-content{
+    text-align: justify;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
 .page-content p{
-    text-align: justify;
-    font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
-.services{
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+.page-content .cards p{
+    margin: 0;
 }
 
-.services .cards .card-service{
+li {
+    list-style: none;
+}
+
+.cards{
     width: 26rem;
     height: 9rem;
     padding: 2rem 1.5rem;
@@ -71,78 +81,35 @@
     transition: background-color 0.2s;
 }
 
-.services .cards .card-service:hover{
+.cards:hover{
     background-color: #d5e5ed;
 }
 
-.services .cards a{
-    text-decoration: none;
+.portal-licenciamento{
+    display: block;
+    border-left: 10px solid var(--cor-principal-5);
 }
 
-.services .cards .card-service p{
+.sp-mais-facil{
+    border-left: 10px solid var(--cor-principal-2);
+}
+
+.sei{
+    border-left: 10px solid var(--cor-complementar-2);
+}
+
+.slce{
+    border-left: 10px solid var(--cor-principal-1); 
+}
+
+main a{
+    text-decoration: none;   
+}
+
+.cards p{
+    font-weight: 400;
     font-size: 1.5rem;
     color: var(--cor-principal-1);
-}
-
-.services .cards .card-1{
-    border-left: 10px solid #27c494;
-}
-
-.services .cards .card-2{
-    border-left: 10px solid #ae00ff;
-}
-
-.services .cards .card-3{
-    border-left: 10px solid #ff0068;
-}
-
-.services .cards .card-4{
-    border-left: 10px solid #24A8D6;
-}
-
-.services .cards .card-5{
-    border-left: 10px solid #fc6f06;
-}
-
-.services .cards .card-6{
-    border-left: 10px solid #044696;
-}
-
-.services .cards .card-7{
-    border-left: 10px solid #27C494;
-}
-
-.services .cards .card-8{
-    border-left: 10px solid #24A8D6;
-}
-
-.services .cards .card-9{
-    border-left: 10px solid #A82A2A;
-}
-
-.services .cards .card-10{
-    border-left: 10px solid #FFDE00;
-}
-
-.senha-web{
-    display: block;
-    width: 90%;
-    padding: 1.3rem 0.5rem;
-    border: 2px solid var(--cor-principal-5);
-    text-align: center;
-    justify-content: center;
-    margin: 2.5rem auto;
-    border-radius: 0.8rem;
-    background-color: #edf5fa;
-}
-
-.senha-web a{
-    text-decoration: none;
-}
-
-.senha-web a p{
-    font-size: 1.2rem;
-    color: var(--cor-principal-5);
 }
 
 .organizations {
@@ -189,9 +156,7 @@ footer .prodam-white{
     margin-right: 1rem;
 }   
 
-
 @media (min-width: 700px){
-
     .page-header{
         display: flex;
         flex-direction: column;
@@ -217,12 +182,25 @@ footer .prodam-white{
         justify-content: space-between;
         align-items: center;
     }
-
-    .page{
-        height: 1100px;
+    
+    .page-header .header-content .info h2 {
+        max-width: 420px;
+        font-size: 2.3rem;
+    }
+    
+    .page-header .header-content .info a p{
+        font-size: 2.1rem;
     }
 
-    #page-landing main{
+    .page-header .header-content .access-location a{
+        font-size: 2.5rem;
+    }
+
+    .page-image img{
+        margin-bottom: 2rem;
+    }
+
+    main{
         width: 90%;
     }
 
@@ -230,85 +208,29 @@ footer .prodam-white{
         margin-top: 0rem;
     }
 
+    .title-page{
+        max-width: 1000px;
+    }
+
+    .title-page h2{
+        font-size: 2.2rem;
+    }
+
     .page-content{
         max-width: 1000px;
-        margin-bottom: 6rem;
+        font-size: 2rem;
+        height: 1100px;
     }
 
-    .page-content p{
-        font-size: 2.1rem;  
-    }
-
-    .services{
-        max-width: 90%;
-        justify-content: start;
-    }
-
-    .cards {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        "card-1 card-2 card-3"
-        "card-4 card-5 card-6"
-        "card-7 card-8 card-9";
-        column-gap: 50px;
-        row-gap: 50px;
-    }
-
-    .services .cards .card-service{
+    .cards{
         width: 28.95rem;
         height: 14rem;
         padding: 2.8rem 2.1rem;
         margin-top: 0rem;
     }
 
-    .services .cards .card-service p{
-        font-size: 1.8rem;
-    }
-
-    .services .cards .card-1{
-        grid-area: card-1;
-    }
-
-    .services .cards .card-2{
-        grid-area: card-2;
-    }
-
-    .services .cards .card-3{
-        grid-area: card-3;
-    }
-
-    .services .cards .card-4{
-        grid-area: card-4;
-    }
-
-    .services .cards .card-5{
-        grid-area: card-5;
-    }
-
-    .services .cards .card-6{
-        grid-area: card-6;
-    }
-
-    .services .cards .card-7{
-        grid-area: card-7;
-    }
-
-    .services .cards .card-8{
-        grid-area: card-8;
-    }
-
-    .services .cards .card-9{
-        grid-area: card-9;
-    }
-
-    .senha-web{
-        margin: 4rem auto;
-    }
-
-    .senha-web a p{
-        font-size: 2rem;
+    .cards p{
+        font-size: 2.3rem;
     }
 
     .organizations {
@@ -337,4 +259,5 @@ footer .prodam-white{
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+    
 }
