@@ -251,7 +251,8 @@ footer .prodam-white{
         grid-template-areas: 
         "card-1 card-2 card-3"
         "card-4 card-5 card-6"
-        "card-7 card-8 card-9";
+        "card-7 card-8 card-9"
+        "span-1 card-10 span-2";
         column-gap: 50px;
         row-gap: 50px;
     }
@@ -301,6 +302,18 @@ footer .prodam-white{
 
     .services .cards .card-9{
         grid-area: card-9;
+    }
+
+    .services .cards .span-1{
+        grid-area: span-1;
+    }
+
+    .services .cards .card-10{
+        grid-area: card-10;
+    }
+
+    .services .cards .span-2{
+        grid-area: span-2;
     }
 
     .senha-web{
