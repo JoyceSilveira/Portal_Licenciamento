@@ -3,6 +3,11 @@
     margin-top: 2.5rem;
 }
 
+.page-content .divider .column-one{
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--cor-principal-3);
+}
+
 @media (min-width: 700px){
     .page-content .divider{
         margin-top: 2rem;
@@ -17,6 +22,8 @@
         grid-area: column-one;
         padding-right: 4rem;
         border-right: 1px solid var(--cor-principal-3);
+        padding-bottom: 0;
+        border-bottom: none;
     }
     
     .page-content .divider .column-two{
